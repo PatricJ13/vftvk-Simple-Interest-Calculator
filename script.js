@@ -7,8 +7,6 @@ function compute()
 //math for firmula
     var interest = principal * years * rate / 100;
     var endYear = new Date().getFullYear() + parseInt(years);
-//simple formula
-    var compounded = principal * ((1 + ((rate/100)/12)) ** (12*years))
 //Alert!!! number less than 1
     if(principal <= 0){
         alert("Enter a positive number");
@@ -18,11 +16,10 @@ function compute()
 //Answer displayed on page
     document.getElementById("result").innerHTML = `If you deposit <mark>${principal}</mark>,<br>at an interest rate of
     <mark>${rate}</mark>.<br>You will receive an amount of <mark>${interest.toFixed(2)}</mark>,<br>in the year <mark>${endYear}</mark><br>
-    <br>
+    <br>;
 }
-//slider function
-function rangeReader()
-{
+
+    function rangeReader() {
     var sliderValue = document.getElementById("rate").value;
     document.getElementById("sliderValue").innerText = `${sliderValue}%`;
-}
+ } 
