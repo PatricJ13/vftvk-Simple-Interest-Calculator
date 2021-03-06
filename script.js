@@ -14,12 +14,12 @@ function compute()
         return false;
     }
 //Answer displayed on page
-    document.getElementById("result").innerHTML = `If you deposit <mark>${principal}</mark>,<br>at an interest rate of
-    <mark>${rate}</mark>.<br>You will receive an amount of <mark>${interest.toFixed(2)}</mark>,<br>in the year <mark>${forYear}</mark>`<br>
-    <br>;
+    document.getElementById("result").innerHTML = 'If you deposit <mark>${principal}</mark>,<br>at an interest rate of
+    <mark>${rate}</mark>.<br>You will receive an amount of <mark>${interest.toFixed(2)}</mark>,<br>in the year <mark>${forYear}</mark>';
 }
 //slider value
-    function rangeGuide() {
-    var sliderGuide = document.getElementById("rate").value;
-    document.getElementById("sliderGuide").innerText = `${sliderGuide}%`;
- } 
+function rangeReader()
+{
+    var sliderValue = document.getElementById("rate").value;
+    document.getElementById("sliderValue").innerText = `${sliderValue}%`;
+}
